@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo Gallery - 2023 - 09</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Photo Gallery - 2023</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="03.html">03</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="03-09.html">09</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+      </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+          
+            <li data-src="media/large/03/09/IMG_20230309_080751.jpg"
+                data-sub-html=""
+                data-download-url="media/original/03/09/IMG_20230309_080751.jpg"
+                
+                data-filename="IMG_20230309_080751.jpg"
+          
+              >
+              <a href="media/original/03/09/IMG_20230309_080751.jpg">
+                <img src="media/thumbs/03/09/IMG_20230309_080751.jpg"
+                     width="120"
+                     height="120"
+                     alt="IMG_20230309_080751.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/03/09/IMG_20230309_080754.jpg"
+                data-sub-html=""
+                data-download-url="media/original/03/09/IMG_20230309_080754.jpg"
+                
+                data-filename="IMG_20230309_080754.jpg"
+          
+              >
+              <a href="media/original/03/09/IMG_20230309_080754.jpg">
+                <img src="media/thumbs/03/09/IMG_20230309_080754.jpg"
+                     width="120"
+                     height="120"
+                     alt="IMG_20230309_080754.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/03/09/IMG_20230309_083303.jpg"
+                data-sub-html=""
+                data-download-url="media/original/03/09/IMG_20230309_083303.jpg"
+                
+                data-filename="IMG_20230309_083303.jpg"
+          
+              >
+              <a href="media/original/03/09/IMG_20230309_083303.jpg">
+                <img src="media/thumbs/03/09/IMG_20230309_083303.jpg"
+                     width="120"
+                     height="120"
+                     alt="IMG_20230309_083303.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/03/09/IMG_20230309_094317.jpg"
+                data-sub-html=""
+                data-download-url="media/original/03/09/IMG_20230309_094317.jpg"
+                
+                data-filename="IMG_20230309_094317.jpg"
+          
+              >
+              <a href="media/original/03/09/IMG_20230309_094317.jpg">
+                <img src="media/thumbs/03/09/IMG_20230309_094317.jpg"
+                     width="120"
+                     height="120"
+                     alt="IMG_20230309_094317.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/03/09/IMG_20230309_122413.jpg"
+                data-sub-html=""
+                data-download-url="media/original/03/09/IMG_20230309_122413.jpg"
+                
+                data-filename="IMG_20230309_122413.jpg"
+          
+              >
+              <a href="media/original/03/09/IMG_20230309_122413.jpg">
+                <img src="media/thumbs/03/09/IMG_20230309_122413.jpg"
+                     width="120"
+                     height="120"
+                     alt="IMG_20230309_122413.jpg" />
+              </a>
+            </li>      
+            <li data-src="media/large/03/09/IMG_20230309_190616.jpg"
+                data-sub-html=""
+                data-download-url="media/original/03/09/IMG_20230309_190616.jpg"
+                
+                data-filename="IMG_20230309_190616.jpg"
+          
+              >
+              <a href="media/original/03/09/IMG_20230309_190616.jpg">
+                <img src="media/thumbs/03/09/IMG_20230309_190616.jpg"
+                     width="120"
+                     height="120"
+                     alt="IMG_20230309_190616.jpg" />
+              </a>
+            </li>  </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>©2023 Shuhang Li lishuhang.me</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>

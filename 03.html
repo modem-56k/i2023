@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, user-scalable=no" />
+      <title>Photo Gallery - 2023 - 03</title>
+      <link rel="stylesheet" href="public/lightgallery/css/lightgallery.css" />
+      <link rel="stylesheet" href="public/videojs/video-js.min.css" />
+      <link rel="stylesheet" href="public/lightgallery/css/lg-exif.min.css" />
+      <link rel="stylesheet" href="public/core.css" />
+      <link rel="stylesheet" href="public/theme.css" />
+  </head>
+
+  <body>
+
+    
+    <div id="container">
+    
+      <!--
+        Gallery title
+      -->
+      <header>
+        <h1><a href="index.html">Photo Gallery - 2023</a></h1>
+      </header>
+    
+      <!--
+        Breadcrumbs of parent albums
+      -->
+      <nav class="breadcrumbs">
+    <a class="breadcrumb-item" href="index.html">Home</a>&nbsp;/&nbsp;<a class="breadcrumb-item" href="03.html">03</a>
+      </nav>
+    
+      <!--
+        Nested albums, if any
+      -->
+      <div id="albums">
+    <a href="03-01.html" style="background-image: url('media/small/03/01/IMG_20230301_084016.jpg')">
+            <div class="info">
+              <h3>01</h3>
+              <div class="summary">7 photos</div>
+              <div class="date">01 Mar 2023 - 02 Mar 2023</div>
+            </div>
+          </a><a href="03-03.html" style="background-image: url('media/small/03/03/IMG_20230302_124902.jpg')">
+            <div class="info">
+              <h3>03</h3>
+              <div class="summary">20 photos</div>
+              <div class="date">02 Mar 2023 - 03 Mar 2023</div>
+            </div>
+          </a><a href="03-04.html" style="background-image: url('media/small/03/04/IMG_20230304_091113.jpg')">
+            <div class="info">
+              <h3>04</h3>
+              <div class="summary">6 photos</div>
+              <div class="date">04 Mar 2023 - 04 Mar 2023</div>
+            </div>
+          </a><a href="03-05.html" style="background-image: url('media/small/03/05/IMG_20230305_091908.jpg')">
+            <div class="info">
+              <h3>05</h3>
+              <div class="summary">7 photos</div>
+              <div class="date">05 Mar 2023 - 05 Mar 2023</div>
+            </div>
+          </a><a href="03-06.html" style="background-image: url('media/small/03/06/IMG_20230306_084211.jpg')">
+            <div class="info">
+              <h3>06</h3>
+              <div class="summary">15 photos</div>
+              <div class="date">06 Mar 2023 - 06 Mar 2023</div>
+            </div>
+          </a><a href="03-07.html" style="background-image: url('media/small/03/07/IMG_20230307_082445.jpg')">
+            <div class="info">
+              <h3>07</h3>
+              <div class="summary">4 photos</div>
+              <div class="date">07 Mar 2023 - 07 Mar 2023</div>
+            </div>
+          </a><a href="03-08.html" style="background-image: url('media/small/03/08/IMG_20230308_104003.jpg')">
+            <div class="info">
+              <h3>08</h3>
+              <div class="summary">23 photos</div>
+              <div class="date">08 Mar 2023 - 08 Mar 2023</div>
+            </div>
+          </a><a href="03-09.html" style="background-image: url('media/small/03/09/IMG_20230309_080751.jpg')">
+            <div class="info">
+              <h3>09</h3>
+              <div class="summary">6 photos</div>
+              <div class="date">09 Mar 2023 - 09 Mar 2023</div>
+            </div>
+          </a>  </div>
+    
+      <!--
+        All photos and videos
+      -->
+      <ul id="media" class="clearfix">
+      </ul>
+    
+      <!--
+        Pagination
+      -->
+    
+      <!--
+        Zip file link
+      -->
+    
+    
+      <!--
+        Optional footer
+      -->
+      <footer>
+        <p>©2023 Shuhang Li lishuhang.me</p>
+      </footer>
+    
+    </div>
+    <!-- Video loader -->
+    <div id="videos">
+    </div>
+
+    <!-- jQuery -->
+    <script src="public/jquery.min.js"></script>
+    <!-- VideoJS -->
+    <script src="public/videojs/video.min.js"></script>
+    <!-- LightGallery -->
+    <script src="public/lightgallery/js/lightgallery.js"></script>
+    <script src="public/lightgallery/js/lg-autoplay.js"></script>
+    <script src="public/lightgallery/js/lg-pager.js"></script>
+    <script src="public/lightgallery/js/lg-thumbnail.js"></script>
+    <script src="public/lightgallery/js/lg-video.js"></script>
+    <script src="public/lightgallery/js/lg-exif.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $("#media").lightGallery({
+          thumbWidth: 80,
+          controls: true,
+          loop : false,
+          download: true,
+          counter: true,
+          videojs: true
+        });
+      });
+    </script>
+
+
+  </body>
+
+</html>
